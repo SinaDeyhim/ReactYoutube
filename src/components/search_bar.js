@@ -31,6 +31,7 @@ class SearchBar extends Component {
 		return(
 			<div className="search-bar">
 				<input
+					placeholder="Search"
 					value= {this.state.term}
 					onChange = {event => this.onInputChange(event.target.value)} />
 				</div>
@@ -44,7 +45,7 @@ class SearchBar extends Component {
 		}
 
 
-		
+
 	}
 
 	// in order to be able to use a component in other files it has to exported:

@@ -41,8 +41,8 @@ class App extends Component{
 
 	// passing data to child elemetns is called passing props
 	render(){
-		//throttling the video search callback function
-		const videoSearch= _.debounce((term) => {this.videoSearch(term)},300);
+		//throttling the video search callback function; 500 is mil is the lag
+		const videoSearch= _.debounce((term) => {this.videoSearch(term)},500);
 		return (
 			<div>
 				<SearchBar onSearchTermChange={videoSearch} />
