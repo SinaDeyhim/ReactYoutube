@@ -25,7 +25,7 @@ class App extends Component{
 			selectedVideo:null
 		};
 
-		this.videoSearch('surfboards');
+		this.videoSearch('react.js');
 	}
 
 	videoSearch(term){
